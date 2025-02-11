@@ -1,0 +1,37 @@
+#header-bar .header-internal {
+    border: 1px solid rgba(0, 0, 0, 0.0);
+  }
+  
+  #header-bar.elementor-sticky--effects .header-internal {
+    /* change the nav background colour & add blur */
+    background: rgba(0, 0, 0, 0.4) !important;
+    backdrop-filter: blur(6px);
+    /* Pushes nav container away from edges */
+    margin-top:20px;
+    /* Add rounded edges */
+    border-radius: 100px;
+    border: 1px solid rgb(255, 255, 255, 0.6);
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  
+  #header-bar.elementor-sticky--effects .header-internal .sticky-menu-items ul li a {
+    /* change the nav menu text colour - optional */
+    color: #fff !important;
+  }
+  
+  #header-bar.elementor-sticky--effects .header-internal, #header-bar .header-internal .sticky-menu-items ul li a, #header-bar .elementor-sticky--effects .header-internal .header-logo, #header-bar .header-internal {
+    transition: .3s all ease-in-out;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 767px) {
+    #header-bar.elementor-sticky--effects .header-internal {
+      background: rgba(0, 0, 0, 0.4) !important;
+    }
+  
+    .elementor-nav-menu--dropdown {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
